@@ -48,4 +48,7 @@ img {
   height: auto;
   max-width: 100%;
 }
+body {
+  background-color: var(--shape-background)
+}
 

@@ -1,28 +1,27 @@
 #app {
   display: grid;
   grid-template-columns: 33% 67%;
-  height: 100vh;
   overflow: hidden;
 }
 
 
 main {
+  background-color: var(--shape-body);
   overflow: auto;
-  justify-items: left;
-  margin: 80px 130px;
+  height: 100vh;
+  border-radius: 1rem;
   
-& h1 {
-  margin: auto;
-}
+  margin: 80px 25px;
 
   & .main-container {
-    max-width: 33rem;
-
-  }
-
-  & h1 {
-    font: 600 1.5rem/1.25 var(--font-family);
-    margin-bottom: .5rem;
+    width: 560px;
+    justify-items: center;
+    margin-top: 80px;
+    
+    & h1 {
+      font: var(--heading-md);
+      color: var(--text-heading) ;
+    }
   }
 }
 
@@ -56,8 +55,6 @@ aside {
       width: 2.87rem;
       height: 3rem;
     }
-
   }
-
 
 }
