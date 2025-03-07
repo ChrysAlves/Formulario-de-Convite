@@ -1,0 +1,63 @@
+#app {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+main {
+  overflow: auto;
+  justify-items: left;
+  margin: 80px 130px;
+  
+& h1 {
+  margin: auto;
+}
+
+  & .main-container {
+    max-width: 33rem;
+
+  }
+
+  & h1 {
+    font: 600 1.5rem/1.25 var(--font-family);
+    margin-bottom: .5rem;
+  }
+}
+
+aside {
+  background-image: url(/assets/Background.png);
+  background-size: cover;
+
+  width: 25rem;
+  height: 45.5rem;
+
+
+  border-radius: 1rem;
+  margin-left: auto;
+
+  & .aside-container {
+    max-width: 21rem;
+    padding: 2rem 2rem 2rem 2rem;
+
+    & h1 {
+      font: var(--logo);
+      color: var(--pink);
+    }
+
+    & p {
+      font: var(--body-md);
+      color: var(--text-heading);
+      width: 21rem;
+    }
+
+    & img {
+      width: 2.87rem;
+      height: 3rem;
+    }
+
+  }
+
+
+}
