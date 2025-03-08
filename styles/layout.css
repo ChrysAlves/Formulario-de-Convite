@@ -10,13 +10,14 @@ main {
   overflow: auto;
   height: 100vh;
   border-radius: 1rem;
-  
+ 
   margin: 80px 25px;
 
   & .main-container {
     width: 560px;
-    justify-items: center;
+    justify-items: stard;
     margin-top: 80px;
+    margin-left: 8.125rem;
     
     & h1 {
       font: var(--heading-md);

@@ -44,7 +44,48 @@
       <div class="main-container">
         <h1>Crie seu convite</h1>
         <form action="" method="post" enctype="multipart/form-data">
-          
+          <fieldset class="event-info">
+            <div class="flex">
+              <img class="calendar-image" src="/assets/icons/calendar.svg" alt="">
+              <legend>Sobre o evento</legend>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event">Titulo</label>
+              <input id="event" type="text" name="event" placeholder="Nome do evento">
+            </div>
+
+            <div class="flex1">
+              <div class="input-wrapper flex-2">
+                <label for="inicial-date">Início</label>
+                <input type="date" id="inicial-date" name="inicial-date" >
+              </div>
+
+              <div class="input-wrapper flex-2">
+                <label for="final-date">Fim</label>
+                <input type="date" id="final-date" name="final-date" >
+              </div>
+            </div>
+
+            <div class="flex1">
+              <div class="input-wrapper flex flex-2">
+                <label for="city">Tipo</label>
+                <input type="radio" id="city" name="city" value="São Paulo" disabled>
+                <img src="/assets/icons/building-2.svg" alt="">
+
+                <input type="radio" id="city" name="city" value="São Paulo" disabled>
+                <img src="/assets/icons/video.svg" alt="">
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="state">Estado</label>
+                <input type="text" id="stade" name="stade" value="SP" disabled>
+              </div>
+            </div>
+            
+
+
+          </fieldset>
         </form>
 
       </div>

@@ -1,0 +1,34 @@
+@import url(/styles/fields/index.css);
+
+fieldset {
+  border: none;
+
+  display: grid;
+  gap: 1.5rem;
+}
+
+legend {
+  font: var( --heading-sm);
+  color: var(--text-heading);
+  margin-bottom: 0.75rem;
+}
+
+fieldset + fieldset {  /* fieldset anterior a outro */
+  margin-top: 3rem;
+}
+
+.event-info {
+  margin-top: 2.5rem;
+ }
+
+ .event-info .flex1{
+  gap: 1.25rem;
+ }
+
+ 
+ .calendar-image{
+  width: 24px;
+  height: 24px;
+  color: var(--input-placeholder);
+  margin-right: 0.75rem;
+ }

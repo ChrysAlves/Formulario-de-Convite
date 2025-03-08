@@ -1,0 +1,31 @@
+input{
+  width: 100%;
+  border-radius: .5rem;
+  background-color: var(--input-base);
+  border: 2px solid var(--input-stroke);
+  padding: 16px 13px;
+  font: var(--body-md);
+  color: var(--input-placeholder);
+}
+
+input::placeholder {
+  color: var(--input-placeholder);
+  font: var(--body-md);
+}
+
+label {
+  display: block;
+  margin-bottom: .75rem;
+  font: var(--body-md);
+  color:  var( --text-body);
+}
+
+input[type="date"] {
+ text-transform: uppercase;
+ color: var(--input-placeholder);
+ font: var(--body-md);
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+      } 
+    }
+
