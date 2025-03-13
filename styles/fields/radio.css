@@ -1,0 +1,78 @@
+.tipo-input {
+  display: flex;
+  width: 100%;
+  border-radius: .5rem;
+  background-color: var(--input-base);
+  border: 2px solid var(--input-stroke);
+  font: var(--body-md);
+  color: var(--input-placeholder);
+}
+
+.radio-input {
+  display: none;
+}
+
+.opcao {
+  width: 130px;
+  height: 45.6px;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 4px 4px 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.opcao:hover {
+  background-color: var( --shape-hover);
+
+}
+
+.radio-input:checked + label {
+  background-color: var(--shape-button);
+}
+
+
+/* Estilos para os ícones */
+.icone-presencial::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(/assets/icons/building-2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.icone-online::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(/assets/icons/video.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+
+label[for="presencial"]:hover .icone-presencial::before {
+  background-image: url(/assets/icons/building-2-hover.svg); 
+}
+
+input[type="radio"]#presencial:checked + label .icone-presencial::before {
+  background-image: url(/assets/icons/building-2-hover.svg); 
+}
+
+
+label[for="online"]:hover .icone-online::before {
+  background-image: url(/assets/icons/video-hover.svg); 
+}
+
+input[type="radio"]#online:checked + label .icone-online::before {
+  background-image: url(/assets/icons/video-hover.svg);
+}
