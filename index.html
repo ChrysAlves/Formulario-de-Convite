@@ -46,7 +46,7 @@
         <form action="" method="post" enctype="multipart/form-data">
           <fieldset class="event-info">
             <div class="flex">
-              <img class="calendar-image" src="/assets/icons/calendar.svg" alt="">
+              <img class="legend-image" src="/assets/icons/calendar.svg" alt="">
               <legend>Sobre o evento</legend>
             </div>
 
@@ -55,7 +55,7 @@
               <input id="event" type="text" name="event" placeholder="Nome do evento">
             </div>
 
-            <div class="flex1">
+            <div class="input-wrapper flex1">
               <div class="input-wrapper flex-2">
                 <label for="inicial-date">Início</label>
                 <input type="date" id="inicial-date" name="inicial-date">
@@ -70,7 +70,7 @@
             <div class="flex1">
               <div class="flex-2">
                 <label for="">Tipo</label>
-                
+
                 <div class="tipo-input">
                   <input type="radio" name="tipo" id="presencial" class="radio-input">
                   <label for="presencial" class="opcao">
@@ -85,19 +85,51 @@
                     <span>Online</span>
                   </label>
                 </div>
-              
+
               </div>
               <div class="input-wrapper flex-2">
                 <label for="state">Estado</label>
                 <input type="text" id="stade" name="stade" value="SP">
               </div>
             </div>
+
+          
+            <div class="textara-wrapper">
+              <label for="medical-info">Descrição</label>
+              <textarea name="medical-info" id="medical-info" cols="30" rows="5"
+                placeholder="A criança possui alguma condição médica?"></textarea>
+            </div>
+
+            
+          </fieldset>
+
+          <fieldset class="customization">
+
+            <div class="flex">
+              <img class="legend-image" src="/assets/icons/paintbrush-vertical.svg" alt="">
+              <legend>Personalização</legend>
+            </div>
+            <div>
+              <label for="colors">Cor principal</label>
+              <div class="colors-wrapper flex">
+                <div><input type="radio" id="colors1" name="colors"></div>
+                <div><input type="radio" id="colors2" name="colors"></div>
+                <div><input type="radio" id="colors3" name="colors"></div>
+                <div><input type="radio" id="colors4" name="colors"></div>
+                <div><input type="radio" id="colors5" name="colors"></div>
+                <div><input type="radio" id="colors6" name="colors"></div>
+                <div><input type="radio" id="colors7" name="colors"></div>
+                <div><input type="radio" id="colors8" name="colors"></div>
+                <div><input type="radio" id="colors9" name="colors"></div>
+                <div><input type="radio" id="colors10" name="colors"></div>
+                <div><input type="radio" id="colors11" name="colors"></div>
+                
+              </div>
+             
+            </div>
+          </fieldset>
       </div>
-
-
-
-
-      </fieldset>
+      
       </form>
 
   </div>

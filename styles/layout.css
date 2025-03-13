@@ -7,8 +7,9 @@
 
 main {
   background-color: var(--shape-body);
+  width: 52rem;
   overflow: auto;
-  height: 100vh;
+  height: 1000px;
   border-radius: 1rem;
  
   margin: 80px 25px;

@@ -8,9 +8,17 @@ fieldset {
 }
 
 legend {
-  font: var( --heading-sm);
+  font: var(--heading);
   color: var(--text-heading);
   margin-bottom: 0.75rem;
+}
+
+.legend-image{
+  width: 24px;
+  height: 24px;
+  color: var(--input-placeholder);
+  margin-right: 0.5rem;
+  margin-top: 0.1rem;
 }
 
 fieldset + fieldset {  /* fieldset anterior a outro */
@@ -26,9 +34,3 @@ fieldset + fieldset {  /* fieldset anterior a outro */
  }
 
  
- .calendar-image{
-  width: 24px;
-  height: 24px;
-  color: var(--input-placeholder);
-  margin-right: 0.75rem;
- }

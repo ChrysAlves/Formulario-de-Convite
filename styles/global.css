@@ -10,6 +10,7 @@
   --logo: 400 2.5rem var(--font-family);
   --heading-md: 800 1.75rem var(--font-family2);
   --heading-sm: 400 1.125rem var(--font-family2);
+  --heading: 800 1.125rem var(--font-family2);
   --body-md: 400 1rem var(--font-family3);
   --body-sm: 600 0.875rem var(--font-family3);
   --body-xs: 600 0.75rem var(--font-family3);

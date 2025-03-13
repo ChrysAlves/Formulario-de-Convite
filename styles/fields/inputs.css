@@ -1,4 +1,7 @@
-input{
+input,
+textarea,
+select{
+  appearance: none;
   width: 100%;
   border-radius: .5rem;
   background-color: var(--input-base);
@@ -29,3 +32,7 @@ input[type="date"] {
       } 
     }
 
+    textarea {
+      resize: none;
+      margin-bottom: 1.5rem;
+    }

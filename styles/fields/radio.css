@@ -25,11 +25,11 @@
 }
 
 .opcao:hover {
-  background-color: var( --shape-hover);
+  background-color: var(--shape-hover);
 
 }
 
-.radio-input:checked + label {
+.radio-input:checked+label {
   background-color: var(--shape-button);
 }
 
@@ -61,18 +61,87 @@
 
 
 label[for="presencial"]:hover .icone-presencial::before {
-  background-image: url(/assets/icons/building-2-hover.svg); 
+  background-image: url(/assets/icons/building-2-hover.svg);
 }
 
-input[type="radio"]#presencial:checked + label .icone-presencial::before {
-  background-image: url(/assets/icons/building-2-hover.svg); 
+input[type="radio"]#presencial:checked+label .icone-presencial::before {
+  background-image: url(/assets/icons/building-2-hover.svg);
 }
 
 
 label[for="online"]:hover .icone-online::before {
-  background-image: url(/assets/icons/video-hover.svg); 
-}
-
-input[type="radio"]#online:checked + label .icone-online::before {
   background-image: url(/assets/icons/video-hover.svg);
 }
+
+input[type="radio"]#online:checked+label .icone-online::before {
+  background-image: url(/assets/icons/video-hover.svg);
+}
+
+.colors-wrapper {
+  gap: 12px;
+
+  & input {
+    width: 40px;
+    height: 40px;
+    border: 5px solid var(--shape-button);
+    border-radius: 50%;
+    text-align: center;
+
+  }
+
+  & input[id="colors1"] {
+    background-color: var(--purple);
+  }
+
+  & input[id="colors2"] {
+    background-color: var(--fuschia);
+  }
+
+  & input[id="colors3"] {
+    background-color: var(--pink);
+  }
+
+  & input[id="colors4"] {
+    background-color: var(--danger);
+  }
+
+  & input[id="colors5"] {
+    background-color: var(--orange);
+  }
+
+  & input[id="colors6"] {
+    background-color: var(--yellow);
+  }
+
+  & input[id="colors7"] {
+    background-color: var(--lime);
+  }
+
+  & input[id="colors8"] {
+    background-color: var(--green);
+  }
+
+  & input[id="colors9"] {
+    background-color: var(--cyan);
+  }
+
+  & input[id="colors10"] {
+    background-color: var(--brand-light);
+  }
+
+  & input[id="colors11"] {
+    background-color: var(--navy);
+  }
+
+
+
+  
+input:hover {
+  border: 5px solid var(--shape-hover);
+}
+
+input:checked {
+  outline: 2px solid var(--brand-light);
+}
+}
+
