@@ -135,13 +135,67 @@ input[type="radio"]#online:checked+label .icone-online::before {
 
 
 
-  
-input:hover {
-  border: 5px solid var(--shape-hover);
+
+  input:hover {
+    border: 5px solid var(--shape-hover);
+  }
+
+  input:checked {
+    outline: 2px solid var(--brand-light);
+  }
 }
 
-input:checked {
-  outline: 2px solid var(--brand-light);
-}
+
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  /* Auto-fit, não importa quantas colunas vao ter, após isso, informa o minimo e o máximo de tamanho que podem ter  */
+  gap: .5rem;
 }
 
+.radio-inner {
+  background-color: var(--shape-button);
+  border-radius: .5rem;
+  justify-items: center;
+
+  height: 6.25rem;
+
+  gap: .5rem;
+  padding: .2rem .2rem;
+
+  position: relative;
+
+  & input,
+  & input:focus,
+  & input:hover {
+    /* Desta maneira retira todas as informaçoes do input */
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+
+  &:hover,
+  &:focus-within {
+    border: 2px solid var(--brand-light);
+
+  }
+
+  &:has(:checked) {
+    /* Quando ele tem algo do tipo checked, exemplo clicado  */
+    border: 2px solid var(--brand-light);
+
+  }
+
+ & label {
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-heading);
+ }
+
+  & img {
+    border-radius: .2rem;
+  }
+
+}

@@ -1,0 +1,55 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilização do input de arquivo */
+.file-input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 14px;
+}
+
+/* Input wrapper */
+.drop-wrapper {
+  display: flex;
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  background-color: var(--input-base);
+  border: 2px solid var(--input-stroke);
+  padding: 16px 13px;
+  font: var(--body-md);
+  color: var(--input-placeholder);
+}
+
+/* Esconde o input nativo */
+input[type="file"] {
+  display: none;
+}
+
+/* Botão customizado */
+.custom-button {
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Quando o input estiver preenchido (estilização apenas visual) */
+input[type="file"]:valid + .custom-button {
+  background-color: var(--shape-button); /* Verde indicando sucesso */
+}
+
+/* Estado de erro (quando o input estiver inválido) */
+input[type="file"]:invalid + .custom-button {
+  background-color: #ff4444; /* Vermelho indicando erro */
+}
