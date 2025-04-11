@@ -1,11 +1,11 @@
 .switch {
   position: relative;
-  width: 60px;
-  height: 34px;
+  width: 3.75rem;
+  height: 2.125rem;
   display: flex;
   align-items: center;
   & p{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     color: var(--text-heading);
     margin-left: 2.5rem;
@@ -14,7 +14,7 @@
 
   &:has(:checked){
     & p{
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 600;
       margin-left: 2.5rem;
       color: transparent; /* Esconde o texto original */
@@ -55,10 +55,10 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 1.625rem;
+  width: 1.625rem;
+  left: .25rem;
+  bottom: .25rem;
   background-color: var(--input-stroke);
   transition: .4s;
 }
@@ -83,7 +83,7 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 2.125rem;
 
 }
 

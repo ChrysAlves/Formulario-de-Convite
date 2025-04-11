@@ -209,7 +209,7 @@
             </div>
 
             <div class="flex1">
-              
+
               <div class="flex-2">
                 <label for="Estilos">Estilos</label>
                 <div class="estilo">
@@ -218,28 +218,82 @@
                     <span class="slider round"></span>
                     <p>Escuro</p>
                   </label>
-                  
+
                 </div>
               </div>
 
               <div class="droparea flex-2">
-                
-                  <div class="file-input">
-                    <label for="foto-de-capa">Foto de capa</label>
-                      <div class="drop-wrapper">
-                          <input type="file" id="file">
-                          <label for="file" class="custom-button"> Selecionar</label>
-                          <span class="file-name">Nenhum arquivo selecionado</span>
-                      </div>
-                     
+                <label for="foto-de-capa">Foto de capa</label>
+                <div class="file-input">
+
+                  <div class="drop-wrapper">
+                    <input type="file" id="file">
+
+                    <label for="file" class="custom-button">
+                      <img src="/assets/icons/upload.svg" alt="">Selecionar</label>
+                    <span class="file-name">Nenhum arquivo selecionado</span>
                   </div>
-           
-
-
+                </div>
               </div>
             </div>
           </fieldset>
+
+          <fieldset class="contacts">
+            <div class="flex">
+              <img class="legend-image" src="/assets/icons/contact.svg" alt="">
+              <legend>Dados para contato</legend>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="nome">Nome</label>
+              <input id="nome" type="text" name="nome" placeholder="Nome Completo">
+            </div>
+
+            <div class="email-tel input-wrapper flex1">
+              <div class="input-wrapper flex-2">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+              </div>
+
+              <div class="input-wrapper flex-2">
+                <label for="tel">Telefone</label>
+                <input type="tel" id="tel" name="tel" placeholder="(99) 99999-9999">
+              </div>
+            </div>
+          </fieldset>
+          <hr class="hr">
+
+          <fieldset class="terms">
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+              <label for="terms">Li e concordo com os Termos e Condições e com a Política de Privacidade</label>
+            </div>
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+              <label for="terms">Aceito receber atualizações e promoções por e-mail</label>
+            </div>
+            <div class="terms-wrapper  input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+              <label for="terms">Aceito receber atualizações e promoções por SMS</label>
+            </div>
+          </fieldset>
+
+          <div class="button-end">
+            <img src="/assets/icons/ticket.svg" alt="">
+            <button>  Gerar Convite</button>
+          </div>
+
       </div>
+
+
+
+
+
+
+
 
       </form>
 

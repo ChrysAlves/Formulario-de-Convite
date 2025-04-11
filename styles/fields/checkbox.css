@@ -1,0 +1,52 @@
+.terms{
+  margin-top: 3rem;
+  gap: .3rem;
+}
+
+.terms-wrapper {
+  position: relative;
+  display: flex;
+
+  gap: .75rem;
+
+
+  & strong {
+    font-weight: 500;
+    color: var(--text-highlight);
+  }
+
+ 
+}
+.checkbox-wrapper {
+
+  & input[type="checkbox"] {
+    all: unset;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .checkbox-image {
+    flex: 0 0 1.25rem ; /* Tirar o alargamento e o encolhimento e define um padrao de tamanho */
+    height: 1.25rem;
+
+    background-image: url(/assets/icons/checkbox-default.svg);
+  }
+
+  &:hover, &:focus-within {
+    .checkbox-image{
+      background-image: url(/assets/icons/checkbox-checked.svg);
+    }
+  }
+
+  &:has(:checked) {
+    .checkbox-image {
+      background-image: url(/assets/icons/checkbox-checked.svg);
+    }
+  }
+
+}
